@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KY | Luxury Fitness Equipment Detail</title>
+  <meta name="description" content="Explore custom luxury Pilates Reformers, high-end electric walking pads, and commercial-grade gym products. Direct from Qingdao Kaiyang Jiaye Industry & Trade.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">KY<span>.</span></a>
+      
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#collection">Collection</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="#" class="inquiry-trigger">Inquiry</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="cart-icon-btn" title="Open Collection Drawer">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="cart-count" style="display: none;">0</span>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail Section (Rendered dynamically by js/app.js based on ?id=X) -->
+  <section class="product-detail-section" id="product-detail-root">
+    <!-- Rendered dynamically by js/app.js -->
+    <div class="container text-center" style="padding: 100px 0; text-align: center;">
+      <h3 class="serif-title" style="font-size: 24px;">Preparing Premium Space...</h3>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="related-products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">CURATED COMPLEMENTS</span>
+        <h2 class="serif-title section-title">Elevate Your Set</h2>
+        <p>Discerning additions designed to seamlessly enrich your private athletic environment.</p>
+      </div>
+      <div class="products-grid" id="related-products-grid">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Side-sliding Shopping Cart Drawer -->
+  <div class="cart-drawer">
+    <div class="cart-header">
+      <h3 class="cart-drawer-title">Selected Collection</h3>
+      <div class="close-cart-btn" title="Close Drawer">
+        <svg viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="cart-body">
+      <div class="cart-items-list">
+        <!-- Items Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-totals">
+        <span class="cart-total-label">Estimated Total:</span>
+        <span class="cart-total-value">US$0.00</span>
+      </div>
+      <button class="btn-gold checkout-btn">Send Inquiry & Checkout</button>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Backdrop Overlay -->
+  <div class="cart-overlay-bg"></div>
+
+  <!-- Contact/Inquiry Popup Modal -->
+  <div class="modal" id="inquiry-modal">
+    <div class="modal-bg"></div>
+    <div class="modal-container">
+      <div class="modal-close-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3 class="serif-title modal-title">Request Premium Quote</h3>
+      <p class="modal-desc">Configure your bespoke gym set. Our elite consulting team in Qingdao will compile your customized logistics quote, brand personalization capabilities, and custom trade pricing.</p>
+      
+      <form id="inquiry-form">
+        <div class="form-group">
+          <label class="form-label" for="inquiry-name">Your Name *</label>
+          <input type="text" id="inquiry-name" class="form-control" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="inquiry-email">Business/Personal Email *</label>
+          <input type="email" id="inquiry-email" class="form-control" required placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="inquiry-phone">Contact Number</label>
+          <input type="tel" id="inquiry-phone" class="form-control" placeholder="+1 (555) 019-2834">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="inquiry-message">Inquiry Specifications *</label>
+          <textarea id="inquiry-message" class="form-control" required placeholder="Describe any OEM specifications, wood selection, leather color options, or custom brand logo engraving."></textarea>
+        </div>
+        <button type="submit" class="btn-gold modal-submit">Dispatch Luxury Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">KY<span>.</span></a>
+          <p class="footer-desc">
+            Designing and forging the absolute finest custom fitness assets in the industry. Where pure minimal luxury meets heavy-duty biomechanics.
+          </p>
+          <button class="btn-outline footer-inquiry-btn" style="font-size: 9px; padding: 12px 30px;">Request Catalogue</button>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#collection">Yoga & Pilates</a></li>
+            <li><a href="index.html#collection">Cardio Systems</a></li>
+            <li><a href="index.html#collection">Strength Training</a></li>
+            <li><a href="index.html#collection">Free Weights</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">KY Brand</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#story">Our Story</a></li>
+            <li><a href="index.html#categories">Elite Categories</a></li>
+            <li><a href="#" class="inquiry-trigger">Bespoke Design</a></li>
+            <li><a href="https://qdkyjy.en.alibaba.com" target="_blank" rel="noopener">Alibaba Store &nearrow;</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Headquarters</h4>
+          <div class="footer-contact-info">
+            <p><strong>Qingdao Kaiyang Jiaye Industry And Trade Co., Ltd.</strong></p>
+            <p>Shandong, China</p>
+            <p><strong>OEM Capability:</strong> Custom Wood, Custom Leathers, Laser Logos, CE certified reformers</p>
+            <p><strong>Email Support:</strong> sales@accio-ai.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Qingdao Kaiyang Jiaye Industry And Trade Co., Ltd. (KY Brand). All Rights Reserved. Luxury Pilates & Fitness Equipment.</p>
+        <p style="letter-spacing: 0.15em;">CE CERTIFIED &bull; FACTORY DIRECT &bull; OEM/ODM SUPPORTED</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
