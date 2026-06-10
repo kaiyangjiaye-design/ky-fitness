@@ -761,9 +761,30 @@ function initInquiryModal() {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Collect data (for mockup logging/success tracking)
+      // Collect data
       const name = document.getElementById('inquiry-name').value;
       const email = document.getElementById('inquiry-email').value;
+      const phoneEl = document.getElementById('inquiry-phone');
+      const phone = phoneEl ? phoneEl.value : '';
+      const message = messageInput ? messageInput.value : '';
+
+      // Build a real email to KY headquarters via the visitor's mail client
+      const KY_EMAIL = '1679632172@qq.com';
+      const subject = 'KY Fitness Inquiry - ' + (name || 'New Lead');
+      const bodyLines = [
+        'New inquiry from KY Fitness website:',
+        '',
+        'Name: ' + name,
+        'Email: ' + email,
+        'Phone: ' + phone,
+        '',
+        'Inquiry / Specifications:',
+        message
+      ];
+      const mailto = 'mailto:' + KY_EMAIL +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(bodyLines.join('\n'));
+      window.location.href = mailto;
 
       // Show beautiful custom notification instead of standard ugly alerts!
       let container = document.querySelector('.toast-container');
